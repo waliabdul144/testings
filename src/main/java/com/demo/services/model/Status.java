@@ -1,5 +1,6 @@
 package com.demo.services.model;
 
+
 public class Status {
 
     private boolean logged_in;
