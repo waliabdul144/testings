@@ -3,19 +3,14 @@ package com.service.site.Entity;
 import jakarta.persistence.*;
 
 @Entity
-public class Cart {
+public class Request {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    private User user;
-
-    @ManyToOne
-    private Product product;
-
-    private Integer quantity;
+    private String type;
+    private String status;
 
     // getters & setters
 }
