@@ -15,7 +15,7 @@ public class KafkaProducerService {
     }
 
     public void sendMessage(OrderEvent message) {
-        kafkaTemplate.send(TOPIC, String.valueOf(message));
+        kafkaTemplate.send(TOPIC, message.toString());
         System.out.println("Message sent: " + message);
     }
 }
