@@ -25,6 +25,11 @@ public class AuthController {
         return usersService.fetchUser(request.getUser().getUserID(), request.getUser().getPassword());
     }
 
+    @GetMapping("/test")
+    public String test() {
+        return "This method works fine";
+    }
+
 
     @GetMapping("/sign-up")
     public Response createUser(@RequestBody JwtRequest request) {
