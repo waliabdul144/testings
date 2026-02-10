@@ -18,4 +18,12 @@ public class KafkaProducerService {
         kafkaTemplate.send(TOPIC, message.toString());
         System.out.println("Message sent: " + message);
     }
+
+    public void test1MrecFile() {
+        ExcelReaderService.readExcelFileStreaming("D:\\Projects\\testings\\microservices\\assets\\dummy_data_1M_rows.xlsx");
+        kafkaTemplate.send(TOPIC, "message");
+        System.out.println("Message sent: " + "message");
+    }
+
+
 }

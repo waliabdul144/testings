@@ -21,4 +21,12 @@ public class KafkaController {
         producerService.sendMessage(message);
         return "Message sent successfully!";
     }
+
+
+    @GetMapping("/testFile")
+    public String testFile() {
+        producerService.test1MrecFile();
+        return "Message sent successfully!";
+    }
+
 }
