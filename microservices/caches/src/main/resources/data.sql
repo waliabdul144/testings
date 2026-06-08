@@ -1,14 +1,14 @@
 -- Countries
-INSERT INTO country (code, name) VALUES ('US', 'United States');
-INSERT INTO country (code, name) VALUES ('IN', 'India');
-INSERT INTO country (code, name) VALUES ('CA', 'Canada');
-INSERT INTO country (code, name) VALUES ('AU', 'Australia');
-INSERT INTO country (code, name) VALUES ('BR', 'Brazil');
-INSERT INTO country (code, name) VALUES ('DE', 'Germany');
-INSERT INTO country (code, name) VALUES ('GB', 'United Kingdom');
-INSERT INTO country (code, name) VALUES ('JP', 'Japan');
-INSERT INTO country (code, name) VALUES ('FR', 'France');
-INSERT INTO country (code, name) VALUES ('MX', 'Mexico');
+INSERT INTO country (country_code, name) VALUES ('US', 'United States');
+INSERT INTO country (country_code, name) VALUES ('IN', 'India');
+INSERT INTO country (country_code, name) VALUES ('CA', 'Canada');
+INSERT INTO country (country_code, name) VALUES ('AU', 'Australia');
+INSERT INTO country (country_code, name) VALUES ('BR', 'Brazil');
+INSERT INTO country (country_code, name) VALUES ('DE', 'Germany');
+INSERT INTO country (country_code, name) VALUES ('GB', 'United Kingdom');
+INSERT INTO country (country_code, name) VALUES ('JP', 'Japan');
+INSERT INTO country (country_code, name) VALUES ('FR', 'France');
+INSERT INTO country (country_code, name) VALUES ('MX', 'Mexico');
 
 -- United States
 INSERT INTO state (state_code, state_name, country_code) VALUES ('CA', 'California', 'US');
